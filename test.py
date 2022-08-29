@@ -1,4 +1,13 @@
 import sprints
 
-print("Mean and maximum values of the list: ",MyFunc([2,33,1,4,5.6,8.2,9.5,5.1,8.2,0.1,6.5,10.2,7.4,-4.1]))
-print(MyFunc([]))
+list = [2.3, 3.4, 5.6, 9, 10, 15, 45, 0, 7, 90, 4]
+result = sprints.MyFunc(list)
+list2=[]
+result2 = sprints.MyFunc(list2)
+list3 = [2.8, 7.4, 55.8, 0.9, -0.10, 22, 33, 44, 15, 7]
+result3 = sprints.MyFunc(list3)
+
+assert result == (26, 5.6)
+assert result2 ==0
+assert result3 == (33,55.8)
+print("All tests are passed")
